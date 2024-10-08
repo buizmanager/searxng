@@ -12,7 +12,7 @@ search:
 
 server:
   # Is overwritten by ${SEARXNG_SECRET}
-  secret_key: "deux1234WWW"
+  secret_key: ""
   limiter: true
   image_proxy: true
   # public URL of the instance, to ensure correct inbound links. Is overwritten
