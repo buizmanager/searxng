@@ -35,7 +35,7 @@ module.exports = function (grunt) {
     },
     eslint: {
       options: {
-        overrideConfigFile: '.eslintrc.json',
+        overrideConfigFile: 'eslint.config.mjs',
         failOnError: true,
         fix: grunt.option('fix')
       },
@@ -133,6 +133,12 @@ module.exports = function (grunt) {
           {
             src: ['src/less/style-rtl.less'],
             dest: 'css/searxng-rtl.min.css',
+            nonull: true,
+            filter: file_exists,
+          },
+          {
+            src: ['src/less/rss.less'],
+            dest: 'css/rss.min.css',
             nonull: true,
             filter: file_exists,
           },
